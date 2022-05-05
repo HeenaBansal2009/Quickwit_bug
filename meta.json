@@ -1,0 +1,115 @@
+{
+  "index_settings": {
+    "docstore_compression": "lz4"
+  },
+  "segments": [
+    {
+      "segment_id": "6dc68fd1-122c-44a9-85cc-f5348907c5f8",
+      "max_doc": 421980,
+      "deletes": null
+    }
+  ],
+  "schema": [
+    {
+      "name": "id",
+      "type": "u64",
+      "options": {
+        "indexed": true,
+        "fieldnorms": false,
+        "fast": "single",
+        "stored": true
+      }
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "basic",
+          "fieldnorms": true,
+          "tokenizer": "raw"
+        },
+        "stored": true
+      }
+    },
+    {
+      "name": "by",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "fieldnorms": true,
+          "tokenizer": "default"
+        },
+        "stored": true
+      }
+    },
+    {
+      "name": "time",
+      "type": "i64",
+      "options": {
+        "indexed": true,
+        "fieldnorms": false,
+        "fast": "single",
+        "stored": true
+      }
+    },
+    {
+      "name": "text",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "fieldnorms": true,
+          "tokenizer": "raw"
+        },
+        "stored": true
+      }
+    },
+    {
+      "name": "kids",
+      "type": "i64",
+      "options": {
+        "indexed": true,
+        "fieldnorms": false,
+        "fast": "multi",
+        "stored": true
+      }
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "fieldnorms": true,
+          "tokenizer": "default"
+        },
+        "stored": true
+      }
+    },
+    {
+      "name": "score",
+      "type": "i64",
+      "options": {
+        "indexed": true,
+        "fieldnorms": false,
+        "fast": "single",
+        "stored": true
+      }
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "options": {
+        "indexing": {
+          "record": "position",
+          "fieldnorms": true,
+          "tokenizer": "default"
+        },
+        "stored": true
+      }
+    }
+  ],
+  "opstamp": 421981
+}
